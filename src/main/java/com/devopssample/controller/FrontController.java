@@ -9,20 +9,15 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping(value = "/")
-public class FrontController{
-	
+public class FrontController {
+
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	public ModelAndView getHomeView(HttpServletRequest request) {
-		StringBuffer str=new StringBuffer("test");
+		StringBuilder str = new StringBuilder("test");
 		str.append("string");
-		String str1="An issue that represents something wrong in the code. If this has not broken yet, it will, and probably at the worst possible"+ "moment. This needs to be fixed. Yesterday.";	
-
-		if(true){
-			System.out.println(str1);
-		}
-		else{
-            System.out.println(str);
-		}
+		String str1 = "An issue that represents something wrong in the code. If this has not broken yet, it will, and probably at the worst possible"
+				+ "moment. This needs to be fixed. Yesterday.";
+		System.out.println(str);
 		ModelAndView model = new ModelAndView("home");
 		return model;
 	}
