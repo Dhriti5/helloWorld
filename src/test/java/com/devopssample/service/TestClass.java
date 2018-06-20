@@ -18,6 +18,10 @@ public class TestClass extends TestCase {
 	public int sub(int a, int b) {
 		return a - b;
 	}
+	
+	public int div(int a, int b) {
+		return a / b;
+	}
 
 	@Test
 	public void testAdd() {
@@ -38,5 +42,19 @@ public class TestClass extends TestCase {
 		int total = 0;
 		int sub = sub(4, 4);
 		assertEquals(sub, total);
+	}
+	
+	@Test
+	public void testDiv() {
+		int total = 2;
+		int sub = div(4, 2);
+		assertEquals(sub, total);
+	}
+	
+	@Test
+	public void testFailDiv() {
+		int total = 3;
+		int sub = div(4, 2);
+		assertNotSame(sub, total);
 	}
 }

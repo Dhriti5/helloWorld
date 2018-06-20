@@ -40,7 +40,7 @@
 	<div style="margin-top: 180px;"></div>
 	<div class="container">
 		<img height="100%" width="100%"
-			src="${pageContext.request.contextPath}/resources/images/helloWorld.jpg"
+			src="${pageContext.request.contextPath}/resources/images/mountains.jpg"
 			alt="Nagarro DevOps" />
 	</div>
 	<div class="container-fluid">
