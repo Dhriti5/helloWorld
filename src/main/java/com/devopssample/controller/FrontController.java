@@ -17,7 +17,7 @@ public class FrontController {
 		str.append("string");
 		/*String str1 = "An issue that represents something wrong in the code. If this has not broken yet, it will, and probably at the worst possible"
 				+ "moment. This needs to be fixed. Yesterday.";*/
-		System.out.println(str);
+		System.out.println(str+"from prod...");
 //		ModelAndView model = new ModelAndView("home");
 		return new ModelAndView("home");
 	}
